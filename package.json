@@ -5,8 +5,10 @@
   "private": true,
   "scripts": {
     "test": "jest",
-    "build": "webpack --mode=development",
-    "start": "webpack-dev-server"
+    "build:dev": "webpack --mode=development",
+    "start:dev": "webpack-dev-server",
+    "build": "webpack --mode=production",
+    "start": "http-server ./dist"
   },
   "author": "meetesh",
   "license": "ISC",
@@ -25,6 +27,7 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
+    "http-server": "^0.12.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   }
